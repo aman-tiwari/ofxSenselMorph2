@@ -15,7 +15,7 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxSenselMorph
+	ADDON_NAME = ofxSenselMorph2
 	ADDON_DESCRIPTION = use the sensel morph from oF
 	ADDON_AUTHOR = @aman-tiwari
 	ADDON_TAGS = "sensel" "morph"
@@ -31,7 +31,6 @@ common:
 	# specified here separated by spaces or one per line using +=
 	ADDON_INCLUDES += libs/sensel
 
-	ADDON_LDFLAGS =
 	
 	# any special flag that should be passed to the compiler when using this
 	# addon
@@ -39,7 +38,7 @@ common:
 	
 	# any special flag that should be passed to the linker when using this
 	# addon, also used for system libraries with -lname
-	ADDON_LIBS = libs/sensel/examples/sensel_example_read_frames/libSensel.dylib
+	ADDON_LIBS = libSensel.dylib
 	# linux only, any library that should be included in the project using
 	# pkg-config
 	# ADDON_PKG_CONFIG_LIBRARIES =
