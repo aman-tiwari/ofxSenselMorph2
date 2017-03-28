@@ -7,9 +7,9 @@ class ofxSenselMorph {
  public:
   static const int defaultFlags = SENSEL_FRAME_CONTENT_PRESSURE_MASK;
 
-  ofxSenselMorph(int initFlags = ofxSenselMorph::defaultFlags)
+    ofxSenselMorph(int initFlags = ofxSenselMorph::defaultFlags, char* port = nullptr)
       : _flags(initFlags) {
-    bool ok = senselOpenConnection(nullptr);
+    bool ok = senselOpenConnection(port);
     if (!ok) {
       throw std::runtime_error("ofxSenselMorph: could not open connection");
     }

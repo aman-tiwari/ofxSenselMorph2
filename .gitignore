@@ -1,1 +1,7 @@
 bin/
+example-basic/bin/
+example-basic/*.xcodeproj
+example-basic/*.plist
+example-basic/*.xcconfig
+example-basic/Makefile
+example-basic/config.make
